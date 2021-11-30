@@ -1,0 +1,123 @@
+#basis {
+    -fx-fill: rgb(204, 249, 170);
+}
+
+ToolPane, ToolPane HBox {
+    -fx-padding: 10px;
+}
+
+MainPane {
+    -fx-alignment: top-left;
+    -fx-background-color: beige;
+}
+
+ToolPane HBox {
+    -fx-spacing: 10px;
+}
+
+CommercialButton, IndustrialButton, ResidentialButton, BulldozerButton, SelectButton, RoadButton, PlayButton, UpgradeButton {
+    -fx-min-width: 120px;
+    -fx-min-height: 60px;
+    -fx-background-size: cover;
+}
+
+CommercialButton {
+    -fx-background-image: url("buttons/commerce.png");
+}
+
+IndustrialButton {
+    -fx-background-image: url("buttons/industry.png");
+}
+
+ResidentialButton {
+    -fx-background-image: url("buttons/residence.png");
+}
+
+BulldozerButton {
+    -fx-background-image: url("buttons/bulldozer.png");
+}
+
+RoadButton {
+    -fx-background-image: url("buttons/road.png");
+}
+
+SelectButton {
+    -fx-background-image: url("buttons/selection.png");
+}
+
+UpgradeButton {
+    -fx-background-image: url("buttons/upgrade.png");
+    -fx-background-size: stretch;
+}
+
+PlayButton, PlayButton.pause {
+    -fx-background-image: url("buttons/play.png");
+}
+
+PlayButton.playing {
+    -fx-background-image: url("buttons/pause.png");
+}
+
+InfoPane {
+    -fx-max-width: 300px;
+    -fx-max-height: 200px;
+    -fx-background-color: white;
+    -fx-border-width: 2px;
+    -fx-border-color: darkgrey;
+    -fx-padding: 10px;
+    -fx-font-size: 20px;
+}
+
+InfoPane VBox {
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+    -fx-font-size: 16px;
+}
+
+CursorPane .build.valid {
+    -fx-fill: rgba(0, 127, 255, 0.5);
+}
+
+CursorPane .build.invalid {
+    -fx-fill: rgba(255, 0, 0, 0.5);
+}
+
+CursorPane .select {
+    -fx-stroke: rgba(255, 255, 255, 0.5);
+    -fx-stroke-width: 4px;
+}
+
+CursorPane .delete {
+    -fx-stroke: rgba(255, 140, 0, 0.5);
+    -fx-stroke-width: 8px;
+}
+
+CursorPane .none, Circle, #clickBasis, CursorPane .select, CursorPane .delete {
+    -fx-fill: transparent;
+}
+
+Circle.immigrant {
+    -fx-fill: grey;
+}
+
+Circle.applicant {
+    -fx-fill: peru;
+}
+
+Circle.shopper {
+    -fx-fill: lightblue;
+}
+
+Circle.good {
+    -fx-fill: yellow;
+}
+
+#playButtonWrapper {
+    -fx-alignment: bottom-left;
+    -fx-padding: 20px;
+}
+
+#infoPaneWrapper {
+    -fx-alignment: bottom-right;
+    -fx-padding: 20px;
+}
